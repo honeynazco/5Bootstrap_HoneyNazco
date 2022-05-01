@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&N Meals</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+    
+          <img src="public/images/logo.png" alt="" class="img-fluid" width="10%">
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="material-icons-round fs-1 text-primary">menu</span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    
+                <ul class="navbar-nav fs-4 fw-bold bigfont text-uppercase">
+    
+                    <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                    </li>
+        
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="#menu">Menú</a>
+                    </li>
+        
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="#doctors">Consultoría</a>
+                    </li>
+    
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="public/images/slide1.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="public/images/slide2.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="public/images/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+
+        </button>
+    </div>
+
+    <div id="menu">
+
+        <h1 class="text-center bg-primary text-light p-2 fw-bold bigfont">Menú</h1>
+
+        <ul id="tabs" class="nav justify-content-center fs-5 fw-bold bigfont">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#grilled">A la parrilla</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#baked">Al horno</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#salad">Ensaladas</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#organic">Orgánicos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#keto">Cetogénicos</a>
+              </li>
+
+        </ul>
+
+        <div id="grilled" class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 2rem 0rem;">
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/grilled1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#grilled1">Detalles</button>
+                        
+                        <div class="modal fade" id="grilled1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/grilled1.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/grilled2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#grilled2">Detalles</button>
+                        
+                        <div class="modal fade" id="grilled2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/grilled2.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/grilled3.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#grilled3">Detalles</button>
+                        
+                        <div class="modal fade" id="grilled3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/grilled3.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+        </div>
+
+        <div id="baked" class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 2rem 0rem;">
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/baked1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#baked1">Detalles</button>
+                        
+                        <div class="modal fade" id="baked1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/baked1.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/baked2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#baked2">Detalles</button>
+                        
+                        <div class="modal fade" id="baked2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/baked2.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/baked3.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#baked3">Detalles</button>
+                        
+                        <div class="modal fade" id="baked3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/baked3.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+        </div>
+
+        <div id="salad" class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 2rem 0rem;">
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/salad1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#salad1">Detalles</button>
+                        
+                        <div class="modal fade" id="salad1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/salad1.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/salad2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#salad2">Detalles</button>
+                        
+                        <div class="modal fade" id="salad2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/salad2.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/salad3.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#salad3">Detalles</button>
+                        
+                        <div class="modal fade" id="salad3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/salad3.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+        </div>
+
+        <div id="organic" class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 2rem 0rem;">
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/organic1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#organic1">Detalles</button>
+                        
+                        <div class="modal fade" id="organic1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/organic1.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/organic2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#organic2">Detalles</button>
+                        
+                        <div class="modal fade" id="organic2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/organic2.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/organic3.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#organic3">Detalles</button>
+                        
+                        <div class="modal fade" id="organic3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/organic3.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+        </div>
+
+        <div id="keto" class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 2rem 0rem;">
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/keto1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#keto1">Detalles</button>
+                        
+                        <div class="modal fade" id="keto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/keto1.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/keto2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#keto2">Detalles</button>
+                        
+                        <div class="modal fade" id="keto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/keto2.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <div class="card p-2" style="width: 20rem; margin: 1rem;">
+            
+                    <img src="public/images/keto3.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+                    <div class="card-body">
+                        
+                        <button type="button" class="btn btn-primary fw-bold bigfont" data-bs-toggle="modal" data-bs-target="#keto3">Detalles</button>
+                        
+                        <div class="modal fade" id="keto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                        
+                                        <h5 class="modal-title fw-bold bigfont" id="exampleModalLabel">Lorem Ipsum</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        
+                                        <img class="img-fluid w-100" src="public/images/keto3.jpg" alt="">
+                        
+                                        <p class="p-3 lilfont" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quia doloribus! Sunt aut cumque fuga vitae fugiat, est iusto, error quisquam deserunt magnam expedita sed. Consequatur, ipsam! Accusantium recusandae natus debitis consequuntur eos minima nam dolorem maxime sint saepe, necessitatibus blanditiis inventore. Impedit cupiditate ut magnam atque voluptatibus nihil nostrum, eveniet, voluptas officiis, tempora ipsa earum aliquid doloribus perferendis! Blanditiis?</p>
+                        
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                        
+                                        <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary fw-bold bigfont">Agregar al carrito</button>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+            
+                </div>
+
+        </div>
+
+    </div>
+
+    <h1 id="doctors" class="text-center text-light bg-primary p-2 fw-bold bigfont">Consultoría</h1>
+
+    <div class="container-fluid d-flex flex-row flex-wrap justify-content-evenly text-center" style="padding: 3rem 0rem;">
+
+        <div class="card p-2 bg-primary" style="width: 20rem; margin: 1rem;">
+
+            <img src="public/images/dr1.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+            <div class="card-body">
+            <h5 class="card-title text-light fw-bold bigfont">Marissa Thomas</h5>
+            <p class="card-text text-light lilfont">Nutricionista</p>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+
+                <div class="modal-dialog modal-dialog-centered">
+        
+                    <div class="modal-content">
+        
+                        <div class="modal-header">
+            
+                            <h5 class="modal-title fw-bold bigfont" id="exampleModalToggleLabel">Ingrese su correo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                        </div>
+            
+                        <div class="modal-body">
+            
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+                        </div>
+            
+                        <div class="modal-footer">
+            
+                            <button class="btn btn-primary fw-bold bigfont" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Siguiente</button>
+            
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        
+                <div class="modal-dialog modal-dialog-centered">
+        
+                    <div class="modal-content">
+            
+                        <div class="modal-header">
+            
+                            <h5 class="modal-title fw-bold bigfont" id="exampleModalToggleLabel2">¡Gracias!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                        </div>
+                        
+                        <div class="modal-body lilfont">
+                        Nuestra nutricionista se contactará con usted mediante un correo electrónico en las próximas 24 horas.
+                        </div>
+            
+                        <div class="modal-footer">
+            
+                            <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Listo</button>
+            
+                        </div>
+                  </div>
+
+                </div>
+
+            </div>
+
+                <a class="btn btn-light fw-bold bigfont text-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Contactar</a>
+
+            </div>
+    
+        </div>    
+
+        <div class="card p-2 bg-primary" style="width: 20rem; margin: 1rem;">
+
+            <img src="public/images/dr2.jpg" class="card-img-top img-fluid dim" alt="...">
+            
+            <div class="card-body">
+            <h5 class="card-title text-light fw-bold bigfont">Ellen Avery</h5>
+            <p class="card-text text-light lilfont">Nutricionista</p>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+
+                <div class="modal-dialog modal-dialog-centered">
+        
+                    <div class="modal-content">
+            
+                        <div class="modal-header">
+            
+                            <h5 class="modal-title fw-bold bigfont" id="exampleModalToggleLabel">Ingrese su correo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
+                        </div>
+                
+                        <div class="modal-body">
+                
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                        </div>
+                
+                        <div class="modal-footer">
+                
+                            <button class="btn btn-primary fw-bold bigfont" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Siguiente</button>
+            
+                        </div>
+            
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        
+                <div class="modal-dialog modal-dialog-centered">
+        
+                  <div class="modal-content">
+        
+                        <div class="modal-header">
+            
+                        <h5 class="modal-title fw-bold bigfont" id="exampleModalToggleLabel2">¡Gracias!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                        </div>
+                        
+                        <div class="modal-body lilfont">
+                        Nuestra nutricionista se contactará con usted mediante un correo electrónico en las próximas 24 horas.
+                        </div>
+            
+                        <div class="modal-footer">
+            
+                            <button type="button" class="btn btn-secondary fw-bold bigfont" data-bs-dismiss="modal">Listo</button>
+            
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+                <a class="btn btn-light fw-bold bigfont text-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Contactar</a>
+
+            </div>
+    
+        </div>  
+
+    </div>
+
+    <nav id="contact" class="navbar navbar-expand-lg navbar-light bg-primary">
+
+        <div class="container-fluid justify-content-center align-items-start">
+    
+          <a class="navbar-brand fw-bold text-light fw-bold bigfont" href="#">¡Contáctanos!</a>
+    
+            <div class="navbar-nav d-flex flex-row">
+    
+                <a class="nav-link" href="#">
+                <span class="material-icons-round text-light">email</span>
+                </a>
+        
+                <a class="nav-link" href="#">
+                <span class="material-icons-round text-light">call</span>
+                </a>
+        
+                <a class="nav-link" href="#">
+                <span class="material-icons-round text-light">facebook</span>
+                </a>
+        
+                <a class="nav-link" href="#">
+                <span class="material-icons-round text-light">whatsapp</span>
+                </a>
+    
+            </div>
+
+        </div>
+
+    </nav>
+    
+</body>
+</html>
